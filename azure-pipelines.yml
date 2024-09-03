@@ -11,5 +11,8 @@ pool:
 
 steps:
 - task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
   inputs:
-    version: '5.x'
+    version: '8.x'
+    performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
