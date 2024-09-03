@@ -1,3 +1,4 @@
+[![Build Status](https://chin-su-kim.visualstudio.com/pipelines-dotnet-core/_apis/build/status%2Fcskim8771.pipelines-dotnet-core?branchName=main)](https://chin-su-kim.visualstudio.com/pipelines-dotnet-core/_build/latest?definitionId=1&branchName=main)
 # Sample ASP.NET Core application for Azure Pipelines docs
 
 For information on how to set up a pipeline for this repository, see [Create your first pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azure-devops).
