@@ -7,14 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: macos-latest
+  vmImage: ubuntu-latest
 
 steps:
-- task: Xcode@5
+- task: UseDotNet@2
   inputs:
-    actions: 'build'
-    scheme: ''
-    sdk: 'iphoneos'
-    configuration: 'Release'
-    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
+    version: '5.x'
