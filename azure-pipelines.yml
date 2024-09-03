@@ -19,11 +19,15 @@ steps:
     version: 8.x
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
-- task: NuGetCommand@2
+  
+- task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
     command: 'restore'
-    restoreSolution: '*.sln'
-    feedsToUse: 'select'
+    projects: '**/*.csproj'
+    feedsToUse: 'config'
+    nugetConfigPath: 'Nuget.config'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
